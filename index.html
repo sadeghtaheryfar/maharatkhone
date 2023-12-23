@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <title>maharatkhone</title>
+</head>
+
+<body dir="rtl" class="pt-[3.5rem] pb-[1rem] px-[1rem] lg:pr-[17rem] lg:pt-[3.5rem] lg:pb-[1rem]">
+    <header>
+        <section
+            class="hide-mobile flex justify-between fixed top-0 left-0 right-0 w-full h-[3.7rem] bg-white justify-between pl-[1rem] pr-[18rem] py-[0.5rem] z-50">
+            <div class="flex w-[50%]">
+                <button
+                    class="h-full min-w-[2.7rem] w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
+                    <svg class="mt-[-0.1rem]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 7H21" stroke="#0448f5" stroke-width="2" stroke-linecap="round" />
+                        <path d="M3 12H21" stroke="#0448f5" stroke-width="2" stroke-linecap="round" />
+                        <path d="M3 17H21" stroke="#0448f5" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+
+                <div
+                    class="flex justify-center w-full items-center relative bg-[#f2f5f7] py-[0.3rem] px-[0.7rem] rounded-full mr-[0.5rem]">
+                    <input placeholder="جستجو" type="text" class="w-full bg-[#f2f5f7]">
+
+                    <svg class="absolute left-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                            stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 22L20 20" stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="w-[50%] flex justify-end">
+                <button
+                    class="h-full w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer ml-[0.5rem]">
+                    <svg class="mt-[-0.1rem] mr-[-0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.03009 12.42C2.39009 17.57 6.76009 21.76 11.9901 21.99C15.6801 22.15 18.9801 20.43 20.9601 17.72C21.7801 16.61 21.3401 15.87 19.9701 16.12C19.3001 16.24 18.6101 16.29 17.8901 16.26C13.0001 16.06 9.00009 11.97 8.98009 7.13996C8.97009 5.83996 9.24009 4.60996 9.73009 3.48996C10.2701 2.24996 9.62009 1.65996 8.37009 2.18996C4.41009 3.85996 1.70009 7.84996 2.03009 12.42Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+
+                <button
+                    class="h-full w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer ml-[0.5rem]">
+                    <svg class="mt-[-0.1rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 9V6.5C2 4.01 4.01 2 6.5 2H9" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M15 2H17.5C19.99 2 22 4.01 22 6.5V9" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M22 16V17.5C22 19.99 19.99 22 17.5 22H16" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22H6.5C4.01 22 2 19.99 2 17.5V15" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+
+                <button
+                    class="h-full w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer ml-[0.5rem]">
+                    <svg class="mt-[-0.1rem] ml-[-0.1rem]" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+
+                <button
+                    class="btn-notif h-full w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer relative">
+                    <svg class="mt-[-0.1rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.02 2.90991C8.70997 2.90991 6.01997 5.59991 6.01997 8.90991V11.7999C6.01997 12.4099 5.75997 13.3399 5.44997 13.8599L4.29997 15.7699C3.58997 16.9499 4.07997 18.2599 5.37997 18.6999C9.68997 20.1399 14.34 20.1399 18.65 18.6999C19.86 18.2999 20.39 16.8699 19.73 15.7699L18.58 13.8599C18.28 13.3399 18.02 12.4099 18.02 11.7999V8.90991C18.02 5.60991 15.32 2.90991 12.02 2.90991Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path
+                            d="M13.87 3.19994C13.56 3.10994 13.24 3.03994 12.91 2.99994C11.95 2.87994 11.03 2.94994 10.17 3.19994C10.46 2.45994 11.18 1.93994 12.02 1.93994C12.86 1.93994 13.58 2.45994 13.87 3.19994Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M15.02 19.0601C15.02 20.7101 13.67 22.0601 12.02 22.0601C11.2 22.0601 10.44 21.7201 9.90002 21.1801C9.36002 20.6401 9.02002 19.8801 9.02002 19.0601"
+                            stroke="#0448f5" stroke-width="1.5" stroke-miterlimit="10" />
+                    </svg>
+
+                    <div
+                        class="flex justify-center items-center absolute right-[-0.2rem] top-[-0.2rem] font-bold text-[12px] w-[1.2rem] h-[1.2rem] rounded-full bg-[#ff0000] text-white">
+                        <span>1</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <section
+            class="hide-pc flex justify-between fixed top-0 left-0 right-0 w-full h-[3.7rem] bg-white justify-between px-[1rem] py-[0.5rem] z-50">
+            <button
+                class="btn-menu h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
+                <svg class="mt-[-0.1rem]" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7H21" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M3 12H21" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M3 17H21" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <button
+                class="btn-notif h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer relative">
+                <svg class="mt-[-0.1rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.02 2.90991C8.70997 2.90991 6.01997 5.59991 6.01997 8.90991V11.7999C6.01997 12.4099 5.75997 13.3399 5.44997 13.8599L4.29997 15.7699C3.58997 16.9499 4.07997 18.2599 5.37997 18.6999C9.68997 20.1399 14.34 20.1399 18.65 18.6999C19.86 18.2999 20.39 16.8699 19.73 15.7699L18.58 13.8599C18.28 13.3399 18.02 12.4099 18.02 11.7999V8.90991C18.02 5.60991 15.32 2.90991 12.02 2.90991Z"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path
+                        d="M13.87 3.19994C13.56 3.10994 13.24 3.03994 12.91 2.99994C11.95 2.87994 11.03 2.94994 10.17 3.19994C10.46 2.45994 11.18 1.93994 12.02 1.93994C12.86 1.93994 13.58 2.45994 13.87 3.19994Z"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M15.02 19.0601C15.02 20.7101 13.67 22.0601 12.02 22.0601C11.2 22.0601 10.44 21.7201 9.90002 21.1801C9.36002 20.6401 9.02002 19.8801 9.02002 19.0601"
+                        stroke="black" stroke-width="1.5" stroke-miterlimit="10" />
+                </svg>
+
+                <div
+                    class="flex justify-center items-center absolute right-[-0.1rem] top-[-0.1rem] font-bold text-[12px] w-[1.2rem] h-[1.2rem] rounded-full bg-[#ff0000] text-white">
+                    <span>1</span>
+                </div>
+            </button>
+
+            <div class="w-full flex justify-center">
+                <img class="w-[auto] h-[2.5rem]" src="/images/logo.png" alt="">
+            </div>
+
+            <button
+                class="h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer]">
+                <svg class="mt-[-0.1rem] mr-[-0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M2.03009 12.42C2.39009 17.57 6.76009 21.76 11.9901 21.99C15.6801 22.15 18.9801 20.43 20.9601 17.72C21.7801 16.61 21.3401 15.87 19.9701 16.12C19.3001 16.24 18.6101 16.29 17.8901 16.26C13.0001 16.06 9.00009 11.97 8.98009 7.13996C8.97009 5.83996 9.24009 4.60996 9.73009 3.48996C10.2701 2.24996 9.62009 1.65996 8.37009 2.18996C4.41009 3.85996 1.70009 7.84996 2.03009 12.42Z"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button
+                class="h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
+                <svg class="mt-[-0.1rem] ml-[-0.1rem]" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z"
+                        stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </section>
+    </header>
+
+    <aside>
+        <div class="show-menu">
+            <div class="w-full p-[1rem] flex justify-center">
+                <img class="w-[70%]" src="/images/logo.png" alt="">
+            </div>
+
+            <div class="h-full">
+                <ul>
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.02 2.84004L3.63 7.04004C2.73 7.74004 2 9.23004 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29004 21.19 7.74004 20.2 7.05004L14.02 2.72004C12.62 1.74004 10.37 1.79004 9.02 2.84004Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 17.99V14.99" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                            <span>خانه</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>دسته بندی</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.05 2.53004L4.03002 6.46004C2.10002 7.72004 2.10002 10.54 4.03002 11.8L10.05 15.73C11.13 16.44 12.91 16.44 13.99 15.73L19.98 11.8C21.9 10.54 21.9 7.73004 19.98 6.47004L13.99 2.54004C12.91 1.82004 11.13 1.82004 10.05 2.53004Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.63 13.08L5.62 17.77C5.62 19.04 6.6 20.4 7.8 20.8L10.99 21.86C11.54 22.04 12.45 22.04 13.01 21.86L16.2 20.8C17.4 20.4 18.38 19.04 18.38 17.77V13.13"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21.4 15V9" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>دوره آموزشی</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.37 2.15009L21.37 5.75006C21.72 5.89006 22 6.31006 22 6.68006V10.0001C22 10.5501 21.55 11.0001 21 11.0001H3C2.45 11.0001 2 10.5501 2 10.0001V6.68006C2 6.31006 2.28 5.89006 2.63 5.75006L11.63 2.15009C11.83 2.07009 12.17 2.07009 12.37 2.15009Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M22 22H2V19C2 18.45 2.45 18 3 18H21C21.55 18 22 18.45 22 19V22Z"
+                                    stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M4 18V11" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8 18V11" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 18V11" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 18V11" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20 18V11" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 22H23" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>شرکت ها</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.5 18V7C3.5 3 4.5 2 8.5 2H15.5C19.5 2 20.5 3 20.5 7V17C20.5 17.14 20.5 17.28 20.49 17.42"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.35 15H20.5V18.5C20.5 20.43 18.93 22 17 22H7C5.07 22 3.5 20.43 3.5 18.5V17.85C3.5 16.28 4.78 15 6.35 15Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 7H16" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8 10.5H13" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <span>کتاب الکترونیکی</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.46005 18.49V15.57C5.46005 14.6 6.22005 13.73 7.30005 13.73C8.27005 13.73 9.14005 14.49 9.14005 15.57V18.38C9.14005 20.33 7.52005 21.9501 5.57005 21.9501C3.62005 21.9501 2.00005 20.32 2.00005 18.38V12.22C1.89005 6.60005 6.33005 2.05005 11.95 2.05005C17.57 2.05005 22 6.60005 22 12.11V18.2701C22 20.2201 20.38 21.84 18.43 21.84C16.48 21.84 14.86 20.2201 14.86 18.2701V15.46C14.86 14.49 15.62 13.62 16.7 13.62C17.67 13.62 18.54 14.38 18.54 15.46V18.49"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+
+                            <span>کتاب صوتی</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V5" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 2V5" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 11H15" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7 15H12" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15 22H9C4 22 3 19.94 3 15.82V9.65C3 4.95 4.67 3.69 8 3.5H16C19.33 3.68 21 4.95 21 9.65V16"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M21 16L15 22V19C15 17 16 16 18 16H21Z" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            <span>بلاگ</span>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                            <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M3.41003 22C3.41003 18.13 7.26003 15 12 15C12.96 15 13.89 15.13 14.76 15.37"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M22 18C22 18.75 21.79 19.46 21.42 20.06C21.21 20.42 20.94 20.74 20.63 21C19.93 21.63 19.01 22 18 22C16.54 22 15.27 21.22 14.58 20.06C14.21 19.46 14 18.75 14 18C14 16.74 14.58 15.61 15.5 14.88C16.19 14.33 17.06 14 18 14C20.21 14 22 15.79 22 18Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M16.4399 18L17.4299 18.99L19.5599 17.02" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+
+                            <span>خرید اشتراک</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="flex justify-center py-[1.5rem] px-[1rem] w-full">
+                <img class="w-[50%]" src="images/logo-fani.png" alt="">
+            </div>
+        </div>
+
+        <div class="close-menu hidden btn-menu"></div>
+
+        <div class="show-notif p-[1rem]">
+            <but class="w-full flex justify-right">
+                <button>
+                    <svg class="btn-notif" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.16998 14.83L14.83 9.17004" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.83 14.83L9.16998 9.17004" stroke="#0448f5" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                            stroke="#0448f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </but>
+
+            <div>
+                <div class="bg-red-600 text-[14px] my-[0.5rem] p-[0.5rem] rounded-[0.5rem] text-white">
+                    <div class="flex justify-between items-center">
+                        <span>اختلال در سرور های دانلود</span>
+
+                        <div class="text-black bg-white px-[0.5rem] py-[0.2rem] rounded-[0.5rem] text-[12px] font-bold">
+                            <span>عمومی</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-[0.5rem] text-[12px]">
+                        <p>ضمن پوزش ، موقتا در برخی مواقع اختلالاتی در اجرای ویدئو ها به وجود آمده که از این بابت
+                            عذرخواهیم ، درحال رفع مشکل هستیم و به زودی برطرف خواهد شد.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="close-notif hidden btn-notif"></div>
+    </aside>
+
+    <nav class="fixed bottom-[0rem] right-[0rem] w-[100vw] z-[108] hide-pc">
+        <div class="flex w-full h-[4rem] bg-[#0448f5]">
+            <ul class="flex justify-between w-full">
+                <button
+                    class="btn-menu w-full h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
+                    <li class="flex flex-col items-center justify-center h-full text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 7H21" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            <path d="M3 17H21" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <span class="text-[12px]">منو</span>
+                    </li>
+                </button>
+
+                <a href="#" class="w-full">
+                    <li class="flex flex-col items-center justify-center h-full text-white">
+                        <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.37 2.15009L21.37 5.75006C21.72 5.89006 22 6.31006 22 6.68006V10.0001C22 10.5501 21.55 11.0001 21 11.0001H3C2.45 11.0001 2 10.5501 2 10.0001V6.68006C2 6.31006 2.28 5.89006 2.63 5.75006L11.63 2.15009C11.83 2.07009 12.17 2.07009 12.37 2.15009Z"
+                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22 22H2V19C2 18.45 2.45 18 3 18H21C21.55 18 22 18.45 22 19V22Z" stroke="white"
+                                stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M4 18V11" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8 18V11" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 18V11" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16 18V11" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20 18V11" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1 22H23" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
+                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span class="text-[12px]">شرکت ها</span>
+                    </li>
+                </a>
+
+                <a href="#" class="w-full relative bg-[#002fa7]">
+                    <li class="flex flex-col items-center justify-center h-full text-white">
+                        <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.02 2.84004L3.63 7.04004C2.73 7.74004 2 9.23004 2 10.36V17.77C2 20.09 3.89 21.99 6.21 21.99H17.79C20.11 21.99 22 20.09 22 17.78V10.5C22 9.29004 21.19 7.74004 20.2 7.05004L14.02 2.72004C12.62 1.74004 10.37 1.79004 9.02 2.84004Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 17.99V14.99" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+
+                        <span class="text-[12px]">خانه</span>
+                    </li>
+
+                    <div class="w-full h-[3px] absolute top-0 bg-white"></div>
+                </a>
+
+                <button onclick="search_mobile.showModal()" class="w-full btn">
+                    <li class="flex flex-col items-center justify-center h-full text-white">
+                        <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 22L20 20" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        <span class="text-[12px]">جستجو</span>
+                    </li>
+                </button>
+
+                <dialog id="search_mobile" class="modal w-[100vw] h-[100vh] m-0 max-h-[100%] max-w-[100%]">
+                    <div class="modal-box">
+                        <div class="flex justify-between items-center py-[0.7rem] px-[0.5rem] border-b-[1px]">
+                            <div>
+                                <span>جسجتجو</span>
+                            </div>
+
+                            <div>
+                                <form method="dialog" class="modal-backdrop flex justify-center items-center ">
+                                    <button>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.16998 14.83L14.83 9.17004" stroke="#292D32" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M14.83 14.83L9.16998 9.17004" stroke="#292D32" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                                stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="p-[0.5rem]">
+                            <div
+                                class="flex justify-center w-full items-center relative bg-[#f2f5f7] py-[0.7rem] px-[1.3rem] rounded-[8px] text-[18px]">
+                                <input placeholder="جستجو" type="text" class="w-full bg-[#f2f5f7]">
+
+                                <svg class="absolute left-[0.5rem]" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                        stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M22 22L20 20" stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </dialog>
+
+                <a href="#" class="w-full">
+                    <li class="flex flex-col items-center justify-center h-full text-white">
+                        <svg class="mb-[0.2rem]" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <span class="text-[12px]">پروفایل</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="bg-[#eceeef] rounded-[1.25rem] p-[0.5rem] lg:p-[1rem]">
+        <section>
+            
+        </section>
+    </main>
+</body>
+<script src="script/script.js"></script>
+
+</html>

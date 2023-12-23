@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/Vazir.ttf');
+}
+
+*{
+    font-family: 'vazir' !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 50px !important;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 50px !important;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #0448f5; 
+    border-radius: 50px !important;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #002a94; 
+    border-radius: 50px !important;
+}
+
+
+aside .close-menu{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 109;
+    background: rgba(0, 0, 0, 0.192);
+    backdrop-filter: saturate(130%) blur(3px);
+}
+
+
+aside .show-menu{
+    min-width: 17rem;
+    max-width: 17rem;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    overflow: auto;
+    z-index: 110;
+    transition: 0.5s;
+}
+
+
+aside .show{
+    right: 0 !important;
+}
+
+
+aside .show-notif{
+    min-width: 17rem;
+    max-width: 17rem;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    overflow: auto;
+    z-index: 111;
+    transition: 0.5s;
+}
+
+
+aside .showNotif{
+    left: 0 !important;
+}
+
+
+aside .close-notif{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 110;
+    background: rgba(0, 0, 0, 0.192);
+    backdrop-filter: saturate(130%) blur(3px);
+}
+
+
+input[type='text']:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+.hide-mobile{
+    display: flex !important;
+}
+
+
+.hide-pc{
+    display: none !important;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:1024px){
+    .hide-mobile{
+        display: none !important;
+    }
+
+    .hide-pc{
+        display: flex !important;
+    }
+
+    aside .show-menu{
+        right: -17rem;
+    }
+}
