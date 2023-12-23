@@ -24,3 +24,32 @@ btnNotif.forEach((btnNotif,index) => {
         CloseNotif.classList.toggle("hidden");
     });
 });
+
+
+// sliders ......................
+
+var swiper = new Swiper(".channels-tv", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    centeredSlides: true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".channels-tv-button-next",
+        prevEl: ".channels-tv-button-prev",
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+});

@@ -32,6 +32,16 @@
 }
 
 
+img {  
+    user-drag: none;  
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
 aside .close-menu{
     width: 100vw;
     height: 100vh;
@@ -122,6 +132,118 @@ input[type='text']:focus{
 }
 
 
+.main-box{
+    box-shadow: 0px 0px 0px 202px #0000006b inset;
+    background-image: url('../images/notebook.jpg');
+    border-radius: 16px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+
+.item-course-main-box{
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    background: #171e326e;
+    box-shadow: 0 0 15px rgb(23 30 50);
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid #a1a4b5;
+    color: white;
+    width: 140px;
+    transition: 0.5s;
+}
+
+
+
+.item-course-main-box:hover{
+    border-color: #0448f5;
+}
+
+
+.item-job-category{
+    background-image: url('../images/water-back.jpg');
+    border-radius: 16px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    padding: 1rem;
+}
+
+
+.item-job-category .title{
+    background-color: #ffffffbd;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #444444;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.channels-tv {
+    width: 100%;
+    height: 100%;
+}
+
+
+.channels-tv .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 16px;
+}
+
+
+.channels-tv .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.channels-tv-button-next,.channels-tv-button-prev{
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    cursor: pointer;
+    background-color: #c0c0c0 !important;
+    border-radius: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.channels-tv-button-next::after{
+    margin-left: -0.2rem;
+}
+
+
+.channels-tv-button-prev::after{
+    margin-right: -0.2rem;
+}
+
+
+.channels-tv-button-next::after,.channels-tv-button-prev::after{
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    color: white !important;
+}
+
+
 @media screen and (max-width:1024px){
     .hide-mobile{
         display: none !important;
@@ -133,5 +255,24 @@ input[type='text']:focus{
 
     aside .show-menu{
         right: -17rem;
+    }
+
+    .item-course-main-box{
+        margin: 10px;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0;
+        background: #171e326e;
+        box-shadow: 0 0 15px rgb(23 30 50);
+        padding: 10px 10px;
+        border-radius: 15px;
+        width: auto;
+        width: 65px;
+    }
+
+    .item-course-main-box svg{
+        width: 24px;
+        height: 24px;
     }
 }
