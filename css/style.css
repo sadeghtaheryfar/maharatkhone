@@ -244,6 +244,11 @@ input[type='text']:focus{
 }
 
 
+.item-persian-period{
+    background-color: white;
+}
+
+
 @media screen and (max-width:1024px){
     .hide-mobile{
         display: none !important;
