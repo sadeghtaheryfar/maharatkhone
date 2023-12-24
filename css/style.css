@@ -321,6 +321,20 @@ input[type='text']:focus{
 }
 
 
+aside .acrive{
+    background-color: #0448f5;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    color: white;
+}
+
+
+aside .acrive path{
+    stroke: white;
+}
+
+
 @media screen and (max-width:1200px){
     .best-books-box{
         grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
