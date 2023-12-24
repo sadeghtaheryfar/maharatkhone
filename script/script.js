@@ -32,7 +32,6 @@ var swiper = new Swiper(".channels-tv", {
     slidesPerView: 3,
     spaceBetween: 10,
     loop:true,
-    centeredSlides: true,
     grabCursor: true,
     navigation: {
         nextEl: ".channels-tv-button-next",
@@ -41,7 +40,7 @@ var swiper = new Swiper(".channels-tv", {
     breakpoints: {
         1200: {
             slidesPerView: 6,
-            spaceBetween: 30,
+            spaceBetween: 25,
         },
         1024: {
             slidesPerView: 4,
@@ -49,6 +48,94 @@ var swiper = new Swiper(".channels-tv", {
         },
         750: {
             slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+});
+
+
+var swiper = new Swiper(".persian-period", {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop:true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".persian-period-button-next",
+        prevEl: ".persian-period-button-prev",
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        850: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+    },
+});
+
+
+var swiper = new Swiper(".university", {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop:true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".university-button-next",
+        prevEl: ".university-button-prev",
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+    },
+});
+
+
+var swiper = new Swiper(".best-users", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop:true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".most-view-button-next",
+        prevEl: ".most-view-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+        },
+        750: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+    },
+});
+
+
+var swiper = new Swiper(".most-view", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop:true,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".most-view-button-next",
+        prevEl: ".most-view-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        750: {
+            slidesPerView: 3,
             spaceBetween: 20,
         },
     },

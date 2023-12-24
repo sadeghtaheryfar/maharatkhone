@@ -215,7 +215,7 @@ input[type='text']:focus{
 }
 
 
-.channels-tv-button-next,.channels-tv-button-prev{
+.slider-button-next,.slider-button-prev{
     width: 2.5rem !important;
     height: 2.5rem !important;
     cursor: pointer;
@@ -227,25 +227,104 @@ input[type='text']:focus{
 }
 
 
-.channels-tv-button-next::after{
+.slider-button-next::after{
     margin-left: -0.2rem;
 }
 
 
-.channels-tv-button-prev::after{
+.slider-button-prev::after{
     margin-right: -0.2rem;
 }
 
 
-.channels-tv-button-next::after,.channels-tv-button-prev::after{
+.slider-button-next::after,.slider-button-prev::after{
     font-size: 20px !important;
     font-weight: 900 !important;
     color: white !important;
 }
 
 
+.slider-button-next::after{
+    margin-left: -0.2rem;
+}
+
+
+.slider-button-prev::after{
+    margin-right: -0.2rem;
+}
+
+
 .item-persian-period{
     background-color: white;
+}
+
+
+.persion-slug-slider{
+    color: white;
+    font-size: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+
+.header-course-slider{
+    text-align: right;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    max-height: 50px;
+    min-height: 30px;
+    font-weight: 600;
+    color: #444 !important;
+}
+
+
+.university-item{
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 7px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15)
+}
+
+
+.most-view .title {
+    text-align: right;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    max-height: 60px;
+    min-height: 42px;
+    font-weight: 600;
+    color: #444 !important;
+}
+
+
+@media screen and (max-width:1200px){
+    .best-books-box{
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
 }
 
 
@@ -279,5 +358,16 @@ input[type='text']:focus{
     .item-course-main-box svg{
         width: 24px;
         height: 24px;
+    }
+
+    .university-item{
+        width: 18rem;
+    }
+}
+
+
+@media screen and (max-width:850px){
+    .item-persian-period{
+        width: 15rem;
     }
 }
