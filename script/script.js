@@ -26,6 +26,17 @@ btnNotif.forEach((btnNotif,index) => {
 });
 
 
+// btn show mini menu
+
+var miniMenu = document.querySelector('#mini-menu');
+
+
+miniMenu.addEventListener('click', function handleClick(event) {
+    document.body.classList.toggle('mini-menu');
+});
+
+
+
 // sliders ......................
 
 var swiper = new Swiper(".channels-tv", {

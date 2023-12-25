@@ -11,12 +11,13 @@
     <title>maharatkhone</title>
 </head>
 
-<body dir="rtl" class="pt-[3.6rem] pb-[5rem] px-[0.5rem] lg:pr-[18rem] lg:pt-[3.5rem] lg:pb-[1rem]">
-    <header>
+<body dir="rtl" class="h-full pt-[3.6rem] pb-[5rem] px-[0.5rem] lg:pr-[18rem] lg:pt-[3.5rem] lg:pb-[1rem]">
+    <header class="h-full">
         <section
             class="hide-mobile flex justify-between fixed top-0 left-0 right-0 w-full h-[3.7rem] bg-white justify-between pl-[1rem] pr-[18rem] py-[0.5rem] z-50">
             <div class="flex w-[50%]">
                 <button
+                id="mini-menu"
                     class="h-full min-w-[2.7rem] w-[2.7rem] bg-[#e2f3fc] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
                     <svg class="mt-[-0.1rem]" width="30" height="30" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -170,16 +171,18 @@
         </section>
     </header>
 
-    <aside>
+    <aside class="h-full">
         <div class="show-menu">
-            <div class="w-full p-[1rem] flex justify-center">
+            <div id="logo" class="w-full p-[1rem] flex justify-center">
                 <img class="w-[70%]" src="./images/logo.png" alt="">
+
+                <img class="w-[70%] hidden" src="./images/logo-icon.png" alt="">
             </div>
 
             <div class="h-full">
                 <ul>
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem] acrive">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem] acrive">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -192,11 +195,11 @@
 
 
                             <span>خانه</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z"
@@ -217,11 +220,11 @@
                             </svg>
 
                             <span>دسته بندی</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -237,11 +240,11 @@
                             </svg>
 
                             <span>دوره آموزشی</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -269,11 +272,11 @@
                                     stroke-linejoin="round" />
                             </svg>
                             <span>شرکت ها</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -291,11 +294,11 @@
                             </svg>
 
                             <span>کتاب الکترونیکی</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -306,11 +309,11 @@
 
 
                             <span>کتاب صوتی</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 2V5" stroke="#000000" stroke-width="1.5" stroke-miterlimit="10"
@@ -330,11 +333,11 @@
                             </svg>
 
                             <span>بلاگ</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
 
-                    <a href="#">
-                        <li class="flex px-[1.5rem] py-[0.5rem]">
+                    <li>
+                        <a href="#" class="flex px-[1.5rem] py-[0.5rem]">
                             <svg class="ml-[0.5rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -354,12 +357,12 @@
 
 
                             <span>خرید اشتراک</span>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-            <div class="flex justify-center py-[1.5rem] px-[1rem] w-full">
+            <div class="hide-mini flex justify-center py-[1.5rem] px-[1rem] w-full">
                 <img class="w-[50%]" src="./images/logo-fani.png" alt="">
             </div>
         </div>
@@ -405,9 +408,10 @@
     <nav class="fixed bottom-[0rem] right-[0rem] w-[100vw] z-[108] hide-pc">
         <div class="flex w-full h-[4rem] bg-[#0448f5]">
             <ul class="flex justify-between w-full">
-                <button
+
+                <li
                     class="btn-menu w-full h-full min-w-[2.7rem] w-[2.7rem] flex justify-center items-center rounded-[0.5rem] cursor-pointer">
-                    <li class="flex flex-col items-center justify-center h-full text-white">
+                    <button class="flex flex-col items-center justify-center h-full text-white">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 7H21" stroke="white" stroke-width="2" stroke-linecap="round" />
                             <path d="M3 12H21" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -415,11 +419,11 @@
                         </svg>
 
                         <span class="text-[12px]">منو</span>
-                    </li>
-                </button>
+                    </button>
+                </li>
 
-                <a href="#" class="w-full">
-                    <li class="flex flex-col items-center justify-center h-full text-white">
+                <li class="w-full">
+                    <a href="#" class="flex flex-col items-center justify-center h-full text-white">
                         <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -447,11 +451,11 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <span class="text-[12px]">شرکت ها</span>
-                    </li>
-                </a>
+                    </a>
+                </li>
 
-                <a href="#" class="w-full relative bg-[#002fa7]">
-                    <li class="flex flex-col items-center justify-center h-full text-white">
+                <li class="w-full relative bg-[#002fa7]">
+                    <a href="#" class="flex flex-col items-center justify-center h-full text-white">
                         <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -463,13 +467,13 @@
 
 
                         <span class="text-[12px]">خانه</span>
-                    </li>
 
-                    <div class="w-full h-[3px] absolute top-0 bg-white"></div>
-                </a>
+                        <div class="w-full h-[3px] absolute top-0 bg-white"></div>
+                    </a>
+                </li>
 
-                <button onclick="search_mobile.showModal()" class="w-full btn">
-                    <li class="flex flex-col items-center justify-center h-full text-white">
+                <li onclick="search_mobile.showModal()" class="w-full btn">
+                    <button class="flex flex-col items-center justify-center h-full w-full text-white">
                         <svg class="mb-[0.2rem]" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -480,57 +484,56 @@
                         </svg>
 
                         <span class="text-[12px]">جستجو</span>
-                    </li>
-                </button>
+                    </button>
 
-                <dialog id="search_mobile" class="modal w-[100vw] h-[100vh] m-0 max-h-[100%] max-w-[100%]">
-                    <div class="modal-box">
-                        <div class="flex justify-between items-center py-[0.7rem] px-[0.5rem] border-b-[1px]">
-                            <div>
-                                <span>جسجتجو</span>
+                    <dialog id="search_mobile" class="modal w-[100vw] h-[100vh] m-0 max-h-[100%] max-w-[100%]">
+                        <div class="modal-box">
+                            <div class="flex justify-between items-center py-[0.7rem] px-[0.5rem] border-b-[1px]">
+                                <div>
+                                    <span>جسجتجو</span>
+                                </div>
+
+                                <div>
+                                    <form method="dialog" class="modal-backdrop flex justify-center items-center ">
+                                        <button>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.16998 14.83L14.83 9.17004" stroke="#292D32"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M14.83 14.83L9.16998 9.17004" stroke="#292D32"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
 
-                            <div>
-                                <form method="dialog" class="modal-backdrop flex justify-center items-center ">
-                                    <button>
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.16998 14.83L14.83 9.17004" stroke="#292D32" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14.83 14.83L9.16998 9.17004" stroke="#292D32" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path
-                                                d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
-                                                stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                    </button>
-                                </form>
+                            <div class="p-[0.5rem]">
+                                <div
+                                    class="flex justify-center w-full items-center relative bg-[#f2f5f7] py-[0.7rem] px-[1.3rem] rounded-[8px] text-[18px]">
+                                    <input placeholder="جستجو" type="text" class="w-full bg-[#f2f5f7]">
+
+                                    <svg class="absolute left-[0.5rem]" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
+                                            stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M22 22L20 20" stroke="#8a8c9f" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
+                    </dialog>
+                </li>
 
-                        <div class="p-[0.5rem]">
-                            <div
-                                class="flex justify-center w-full items-center relative bg-[#f2f5f7] py-[0.7rem] px-[1.3rem] rounded-[8px] text-[18px]">
-                                <input placeholder="جستجو" type="text" class="w-full bg-[#f2f5f7]">
-
-                                <svg class="absolute left-[0.5rem]" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"
-                                        stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M22 22L20 20" stroke="#8a8c9f" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                </dialog>
-
-                <a href="#" class="w-full">
-                    <li class="flex flex-col items-center justify-center h-full text-white">
+                <li class="w-full">
+                    <a href="#" class="flex flex-col items-center justify-center h-full text-white">
                         <svg class="mb-[0.2rem]" width="25" height="25" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -542,13 +545,13 @@
                         </svg>
 
                         <span class="text-[12px]">پروفایل</span>
-                    </li>
-                </a>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <main class="bg-[#f1f1f1] rounded-[1.25rem] p-[0.5rem] lg:p-[1rem]">
+    <main class="h-full bg-[#f1f1f1] rounded-[1.25rem] p-[0.5rem] lg:p-[1rem]">
         <section class="main-box p-1rem flex flex-col justify-center items-center rounded-[0.5rem]">
             <div>
                 <h1 class="p-[1rem] text-center text-xl md:text-3xl	font-bold text-white">مهارت حونه بزرگ ترین مرجع
@@ -1427,7 +1430,8 @@
                             </a>
 
                             <a href="#" class="w-[50%] h-[5.75rem] overflow-hidden">
-                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp" alt="">
+                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -1463,7 +1467,8 @@
                             </a>
 
                             <a href="#" class="w-[50%] h-[5.75rem] overflow-hidden">
-                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp" alt="">
+                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -1499,7 +1504,8 @@
                             </a>
 
                             <a href="#" class="w-[50%] h-[5.75rem] overflow-hidden">
-                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp" alt="">
+                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -1535,7 +1541,8 @@
                             </a>
 
                             <a href="#" class="w-[50%] h-[5.75rem] overflow-hidden">
-                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp" alt="">
+                                <img class="h-full w-full object-cover rounded-[0.5rem]" src="./images/udemy.webp"
+                                    alt="">
                             </a>
                         </div>
 
@@ -3140,7 +3147,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="h-full">
         <div class="bg-[#f1f1f1] w-full rounded-[1rem] p-[1rem] my-[1rem]">
             <div class="w-full flex justify-center flex-col items-center">
                 <img class="w-2rem mb-[1rem]" src="./images/logo.png" alt="farin-logo">

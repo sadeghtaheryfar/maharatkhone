@@ -335,6 +335,55 @@ aside .acrive path{
 }
 
 
+@media screen and (min-width:1024px){
+    .mini-menu{
+        padding-right: 4.5rem !important;
+    }
+
+    .mini-menu #logo{
+        padding: 0.8rem;
+    }
+
+    .mini-menu #logo img:nth-last-child(1){
+        display: flex;
+        width: 100%;
+    }
+
+    .mini-menu #logo img:nth-last-child(2){
+        display: none;
+    }
+
+    .mini-menu .show-menu{
+        min-width: 4rem;
+        max-width: 4rem;
+    }
+
+    .mini-menu header > section{
+        padding-right: 4.5rem;
+    }
+
+    .mini-menu aside span{
+        display: none;
+    }
+
+    .mini-menu aside svg{
+        margin: 0rem;
+    }
+
+    .mini-menu aside a{
+        padding: 0.3rem;
+        height: 2.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mini-menu .hide-mini{
+        display: none !important;
+    }
+}
+
+
 @media screen and (max-width:1200px){
     .best-books-box{
         grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
